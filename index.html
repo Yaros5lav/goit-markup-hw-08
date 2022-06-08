@@ -22,52 +22,54 @@
   <body class="all">
     <!-- header -->
     <header>
-      <div class="container header__container">
-        <!-- <nav class="navigation"> -->
-        <a href="./index.html" class="link logo navigation__flex"
-          ><span lang="en"><span class="logo--web">Web</span>Studio</span></a
-        >
-        <button type="button" class="button header__menu-button" data-menu-button>
-          <svg class="header__svg header__svg--menu" width="40px" height="40px">
-            <use class="header__icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
-            <use class="header__icon-cross" href="./images/icons.svg#icon-close_40px"></use>
-          </svg>
-        </button>
-        <div class="header__contacts" data-menu>
-          <ul class="list navigation__list navigation__flex">
-            <li class="navigation__item">
-              <a href="./index.html" class="link linkhov transition navigation__link current"
-                >Студия</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a href="./portfolio.html" class="link linkhov transition navigation__link"
-                >Портфолио</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a href="" class="link linkhov transition navigation__link">Контакты</a>
-            </li>
-          </ul>
-          <!-- </nav> -->
+      <div class="page-header">
+        <div class="container header__container">
+          <!-- <nav class="navigation"> -->
+          <a href="./index.html" class="link logo navigation__flex"
+            ><span lang="en"><span class="logo--web">Web</span>Studio</span></a
+          >
+          <button type="button" class="button header__menu-button" data-menu-button>
+            <svg class="header__svg header__svg--menu" width="40px" height="40px">
+              <use class="header__icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
+              <use class="header__icon-cross" href="./images/icons.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+          <div class="header__contacts" data-menu>
+            <ul class="list navigation__list navigation__flex">
+              <li class="navigation__item">
+                <a href="./index.html" class="link linkhov transition navigation__link current"
+                  >Студия</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="./portfolio.html" class="link linkhov transition navigation__link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="" class="link linkhov transition navigation__link">Контакты</a>
+              </li>
+            </ul>
+            <!-- </nav> -->
 
-          <ul class="list address">
-            <li class="address__item">
-              <a href="mailto:info@devstudio.com" class="link linkhov transition address__link"
-                ><svg class="icon address__icon address__icon--envelope" width="16" height="12">
-                  <use href="./images/icons.svg#icon-envelope-1"></use></svg
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="address__item">
-              <a href="tel:+380961111111" class="link linkhov transition address__link">
-                <svg class="icon address__icon address__icon--envelope" width="10" height="16">
-                  <use href="./images/icons.svg#icon-smartphone-1"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
+            <ul class="list address">
+              <li class="address__item">
+                <a href="mailto:info@devstudio.com" class="link linkhov transition address__link"
+                  ><svg class="icon address__icon address__icon--envelope" width="16" height="12">
+                    <use href="./images/icons.svg#icon-envelope-1"></use></svg
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address__item">
+                <a href="tel:+380961111111" class="link linkhov transition address__link">
+                  <svg class="icon address__icon address__icon--envelope" width="10" height="16">
+                    <use href="./images/icons.svg#icon-smartphone-1"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -348,58 +350,60 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__flex">
-          <a href="./index.html" class="logo link footer__logo"
-            ><span lang="en"><span class="logo--web">Web</span>Studio</span></a
-          >
-          <address>
-            <ul class="list footer-address">
-              <li class="footer-address__item">
-                <a href="" class="link footer-address__text">г. Киев, пр-т Леси Украинки, 26</a>
+        <div class="adapt-container--foot">
+          <div class="footer__flex">
+            <a href="./index.html" class="logo link footer__logo"
+              ><span lang="en"><span class="logo--web">Web</span>Studio</span></a
+            >
+            <address>
+              <ul class="list footer-address">
+                <li class="footer-address__item">
+                  <a href="" class="link footer-address__text">г. Киев, пр-т Леси Украинки, 26</a>
+                </li>
+                <li class="footer-address__item">
+                  <a
+                    href="mailto:info@example.com"
+                    class="link linkhov transition footer-address__link"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer-address__item">
+                  <a href="tel:+380961111111" class="link linkhov transition footer-address__link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__flex join">
+            <p class="footer__title"><em class="footer__title">присоединяйтесь</em></p>
+            <ul class="join__list list">
+              <li class="join__item">
+                <a href="" class="join__link transition"
+                  ><svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use></svg
+                ></a>
               </li>
-              <li class="footer-address__item">
-                <a
-                  href="mailto:info@example.com"
-                  class="link linkhov transition footer-address__link"
-                  >info@example.com</a
-                >
+              <li class="join__item">
+                <a href="" class="join__link transition"
+                  ><svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use></svg
+                ></a>
               </li>
-              <li class="footer-address__item">
-                <a href="tel:+380961111111" class="link linkhov transition footer-address__link"
-                  >+38 096 111 11 11</a
-                >
+              <li class="join__item">
+                <a href="" class="join__link transition"
+                  ><svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="join__item">
+                <a href="" class="join__link transition"
+                  ><svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg
+                ></a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer__flex join">
-          <p class="footer__title"><em class="footer__title">присоединяйтесь</em></p>
-          <ul class="join__list list">
-            <li class="join__item">
-              <a href="" class="join__link transition"
-                ><svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-            <li class="join__item">
-              <a href="" class="join__link transition"
-                ><svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li class="join__item">
-              <a href="" class="join__link transition"
-                ><svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="join__item">
-              <a href="" class="join__link transition"
-                ><svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="footer__flex subscribe">
           <p class="footer__title"><em class="footer__title">Подпишитесь на рассылку</em></p>
