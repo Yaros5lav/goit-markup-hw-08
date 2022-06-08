@@ -1,0 +1,43 @@
+.clients__list {
+	display: flex;
+	justify-content: center;
+}
+
+.clients-svg {
+	fill: currentColor;
+}
+
+// .clients__link:hover,
+// .clients__link:focus {
+
+// 	border: 1px solid var(--company-color);
+// 	/* fill: var(--company-color); */
+// 	color: var(--button-hover);
+// }
+
+.clients__link {
+
+	&:hover,
+	&:focus {
+		border: 1px solid var(--company-color);
+		/* fill: var(--company-color); */
+		color: var(--button-hover);
+	}
+
+	color: var(--clients-logo);
+	transition-property: color,
+	border;
+	/*  */
+	display: flex;
+	width: 170px;
+	height: 92px;
+	border: 1px solid var(--clients-logo);
+	/* fill: var(--clients-logo); */
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+}
+
+.clients__item:not(:last-child) {
+	margin-right: 30px;
+}

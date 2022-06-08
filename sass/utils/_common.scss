@@ -1,0 +1,92 @@
+body {
+	font-family: $primaryFont;
+	background-color: var(--background-main);
+	color: var(--primary-text);
+	letter-spacing: 0.03em;
+	font-size: 14px;
+}
+
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+.section__title {
+	margin-bottom: 50px;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+}
+
+.hidden {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+}
+.current {
+	position: relative;
+}
+.linkhov.current {
+	color: var(--company-color)
+}
+.transition {
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* remove dots only from existing lists */
+.list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+/* remove underline from all links */
+.link {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+	margin-top: 0;
+}
+
+p {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* links to change color when hover and focus*/
+// .linkhov:hover,
+// .linkhov:focus {
+// 	color: var(--company-color);
+// }
+.linkhov {
+	&:hover,
+	&:focus {
+		color: var(--company-color);
+	}
+}
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	width: 1200px;
+	padding-right: 15px;
+	padding-left: 15px;
+	/* outline: solid yellow; */
+}
+.button {
+	cursor: pointer;
+}
+.image {
+	display: block;
+	/* z-index: -2; */
+}

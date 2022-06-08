@@ -1,0 +1,18 @@
+.logo {
+	font-family: $logoFont;
+	color: var(--logo-black);
+	font-weight: 700;
+	/* line-height is 31px in figma, when i get 30.94px, should i round it up to 1.2 or include more numbers after dort? */
+	line-height: 1.19;
+	font-size: 26px;
+}
+
+.logo--web {
+	color: var(--company-color);
+}
+
+.footer__logo {
+	display: block;
+	margin-bottom: 20px;
+	color: var(--background-main);
+}

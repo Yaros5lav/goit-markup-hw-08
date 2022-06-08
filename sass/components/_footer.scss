@@ -1,0 +1,133 @@
+
+.subscribe-icon {
+	margin-left: 10px;
+}
+
+.form-foot {
+	display: flex;
+}
+
+
+
+// .subscribe__email::placeholder {
+// 	font-weight: 400;
+// 	font-size: 16px;
+// 	line-height: 20px;
+// 	color: var(--footer-address);
+// }
+
+.subscribe__email {
+	&::placeholder {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 20px;
+		color: var(--footer-address);
+	}
+	color: var(--background-main);
+	margin-right: 12px;
+	padding-left: 16px;
+	display: inline-block;
+	width: 358px;
+	height: 50px;
+	background-color: var(--background-secondary);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 4px;
+}
+
+.subscribe__button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 50px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 0.06em;
+	color: var(--background-main);
+	background-color: var(--company-color);
+	border: 0px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+}
+
+.footer-address__link,
+.footer-address__text {
+	line-height: 1.71;
+	font-style: normal;
+
+}
+
+.foot-addr-item:not(:last-child) {
+	margin-bottom: 9px;
+}
+
+.footer-address__link {
+	transition-property: color;
+	color: var(--footer-address);
+}
+
+.footer-address__text {
+	color: var(--background-main);
+}
+
+.footer {
+	padding: 60px 0px;
+	background-color: var(--background-secondary);
+}
+
+.footer__container {
+	display: flex;
+	align-items: baseline;
+}
+
+.footer__flex:nth-child(1) {
+	width: 231px;
+	margin-right: 70px;
+}
+
+.footer__flex:nth-child(2) {
+	margin-right: 93px;
+}
+
+.join__list {
+	display: flex;
+	justify-content: center;
+}
+
+.team-icon {
+	/* fill: currentColor; */
+}
+
+// .join__link:hover,
+// .join__link:focus {
+// 	background-color: var(--company-color);
+// }
+
+.footer__title {
+	color: var(--background-main);
+	font-style: normal;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.join__link {
+	&:hover , 
+	&:focus {
+		background-color: var(--company-color);
+	}
+	transition-property: background-color;
+	display: flex;
+	width: 44px;
+	height: 44px;
+	fill: var(--background-main);
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: var(--footer-links-bcgd);
+}
+
+.join__item:not(:last-child) {
+	margin-right: 10px;
+}
