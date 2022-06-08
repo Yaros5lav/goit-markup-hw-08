@@ -1,92 +1,34 @@
+.header__contacts {
+	display: none;
+	&.is-open {
+		display: block;
+	}
+}
 .header__container {
-	display: flex;
-	justify-content: space-between;
-}
-.address__icon {
-	fill: currentColor;
-	margin-right: 10px;
-}
-.navigation__link:not(.current):focus::before,
-.navigation__link:not(.current):hover::before {
-	transform: scale(1);
-}
-
-.navigation__link::before {
-	transform: scale(0);
-	transition-property: transform;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.navigation__link::before,
-.current::after {
-	content: "";
-	background-image: url(../images/hover.jpg);
-	display: inline-block;
-	width: calc(100% - 1px);
-	height: 4px;
-	background-size: contain;
-	position: absolute;
-	border-radius: 2px;
-	bottom: -1.3px;
-	left: 0;
-}
-.navigation__list {
-	display: flex;
-}
-
-.navigation__item:not(:last-child) {
-	margin-right: 50px;
-}
-
-.address {
-	display: flex;
-	/* margin-left: auto; */
-}
-
-.address__item:not(:last-child) {
-	margin-right: 50px;
-
-}
-
-.header__container {
-	display: flex;
-	justify-content: space-between;
-}
-
-.navigation__flex:not(:last-child) {
-	margin-right: 93px;
-}
-
-.navigation {
-	display: flex;
-	align-items: center;
-}
-
-.navigation__link,
-.address__link {
-	transition-property: color;
-	font-weight: 500;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
-}
-
-.navigation__link {
 	position: relative;
-	display: block;
-	padding-top: 32px;
-	padding-bottom: 32px;
-
-	color: inherit;
+}
+.header__menu-button {
+	display: inline-flex;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}
+.header__svg {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.header__icon-cross {
+	display: none;
+	
 }
 
-.address__link {
-	align-items: center;
-	display: flex;
-	padding-top: 32px;
-	padding-bottom: 32px;
-	color: var(--secondary-text);
-}
-
-header {
-	border-bottom: 1px solid var(--header-bottom);
+.header__menu-button {
+	&.is-open .header__icon-cross {
+		display: block;
+	}
+	&.is-open .header__icon-menu {
+		display: none;
+	}
 }

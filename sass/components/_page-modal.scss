@@ -4,6 +4,10 @@
 }
 
 .backdrop {
+	overflow-y: scroll;
+	// display: flex;
+	// justify-content: center;
+	// align-items: center;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -14,6 +18,7 @@
 	width: 100%;
 	height: 100%;
 	background-color: var(--backdrop-bckg) ;
+	padding: 93px 15px 94px 15px;
 }
 // .modal__close:hover {
 // 	fill: #2196F3;
@@ -47,26 +52,36 @@
 // 	outline: 0;
 // }
 .modal {
+	position: relative;
 	&__textarea:focus,
 	&__input:focus {
 		border-color: var(--company-color);
 		outline: 0;
 	}
 	padding: 40px 39px 40px 41px;
-	transform-origin: center center;
-	transition-property: transform;
-	display: flex;
-	justify-content: center;
-	position: absolute;
-	bottom: 50%;
-	right: 50%;
-	transform: translate(50% , 50%);
-	width: 528px;
-	height: 581px;
+	// transform-origin: center center;
+	// transition-property: transform;
+	// display: flex;
+	// justify-content: center;
+	// position: absolute;
+
 	background-color: var(--background-main);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 	outline: 1px yellow;
+	@media (min-width: 480px) {
+		position: absolute;
+		bottom: 50%;
+		right: 50%;
+		transform: translate(50%, 50%);
+		width: 450px;
+		height: 609px;
+	}
+	@media (min-width: 1200px) {
+		width: 528px;
+		height: 581px;
+	}
+
 }
 .modal__title {
 	text-align: center;
@@ -79,6 +94,9 @@
 	width: 448px;
 } */
 .modal__label {
+	&:last-child {
+		background-color: aqua;
+	}
 	margin-bottom: 10px;
 	display: block;
 	color: var(--secondary-text);
@@ -93,7 +111,7 @@
 	margin-top: 4px;
 	display: block;
 	color: var(--primary-text);
-	width: 448px;
+	width: 100%;
 	height: 40px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
@@ -153,14 +171,14 @@
 	}
 }
 .agreement {
-	padding-left: 13px;
+	// padding-left: 13px;
 	margin-bottom: 30px;
-	display: flex;
+	display: inline-block;
 	align-items: center;
 	color: var(--secondary-text);
 }
 .agreement__svg {
-	display: block;
+	display: inline-block;
 	width: 16px;
 	height: 15px;
 	position: relative;
@@ -194,12 +212,18 @@
 	text-decoration-line: underline;
 	color: var(--company-color);
 }
+
 .agreement__link,
 .agreement {
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 24px;
+	font-weight: 400;	
+	font-size: 12px;
+	line-height: 1.16;
 	letter-spacing: 0.03em;
+	@media (min-width: 1200px) {
+		font-size: 14px;
+		line-height: 24px;
+	}
+
 }
 
 // .modal__button:hover {

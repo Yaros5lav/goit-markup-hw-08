@@ -1,15 +1,11 @@
-@import 'utils/variables';
-@import 'utils/common';
-@import 'components/logo';
-@import 'components/header';
-@import 'components/hero';
-@import 'components/reasons';
-@import 'components/processes';
-@import 'components/team';
-@import 'components/clients';
-@import 'components/page-modal';
-@import 'components/footer';
-@import 'components/filter';
-@import 'components/grid';
-
-
+@import './utils/variables';
+@import './base/common' ;
+@import './components/logo';
+@import './components/header';
+@import './components/_page-modal';
+@import './components/hero';
+@import './components/reasons';
+@import './components/team';
+@import './components/processes';
+@import './components/clients';
+@import './components/footer'
