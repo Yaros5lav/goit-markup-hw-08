@@ -595,6 +595,7 @@ header {
 
 .agreement {
   display: flex;
+  align-items: center;
   margin-bottom: 30px;
   justify-content: center;
   color: var(--secondary-text);
@@ -1213,6 +1214,14 @@ header {
   .footer__flex {
     margin-left: auto;
     margin-right: auto;
+  }
+  .footer__flex.join {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .adapt-container--foot {
     margin-bottom: 60px;
   }
 }
@@ -1220,7 +1229,6 @@ header {
 @media (min-width: 768px) and (max-width: 1199px) {
   .adapt-container--foot {
     padding-left: 76px;
-    margin-bottom: 60px;
   }
   .footer__flex:nth-child(1) {
     margin-right: 161px;
@@ -1235,12 +1243,12 @@ header {
 }
 
 @media (min-width: 1200px) {
+  .adapt-container--foot {
+    margin-right: 93px;
+  }
   .footer__flex:nth-child(1) {
     width: 231px;
     margin-right: 70px;
-  }
-  .footer__flex:nth-child(2) {
-    margin-right: 93px;
   }
 }
 

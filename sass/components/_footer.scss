@@ -167,15 +167,21 @@
 		margin-left: auto;
 		margin-right: auto;
 
-		margin-bottom: 60px;
-		
+		&.join {
+			margin-top: 60px;
+		}		
 	}
 
+}
+@media (max-width:1199px) {
+	.adapt-container--foot {
+		margin-bottom: 60px;
+	}
 }
 @media  (min-width:768px) and (max-width:1199px) {
 	.adapt-container--foot {
 		padding-left: 76px;
-		margin-bottom: 60px;
+		// margin-bottom: 60px;
 	}
 	.footer__flex:nth-child(1) {
 		margin-right: 161px;
@@ -188,12 +194,14 @@
 	}
 }
 @media (min-width: 1200px) {
+	.adapt-container--foot {
+		margin-right: 93px;
+	}
 	.footer__flex:nth-child(1) {
 		width: 231px;
 		margin-right: 70px;
 	}
 	
 	.footer__flex:nth-child(2) {
-		margin-right: 93px;
 	}
 }
