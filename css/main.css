@@ -167,6 +167,10 @@ p {
   color: var(--background-main);
 }
 
+.header__contacts {
+  z-index: 1;
+}
+
 .header__contacts.is-open {
   display: block;
 }
