@@ -439,6 +439,7 @@ header {
 }
 
 .backdrop {
+  z-index: 11;
   overflow-y: scroll;
   position: fixed;
   top: 0;
