@@ -206,7 +206,7 @@
                   ./images/img-5@450p.jpg 450w,
                   ./images/img-5@900p.jpg 900w
                 "
-                sizes="(min-width:1200px) 270px ,(min-width: 768px) 354px ,  100vw"
+                sizes="(min-width:1200px) 270px ,(min-width: 768px) 354px , (max-width: 767px) 450px ,   100vw"
                 src="./images/img-5.jpg"
                 alt="сотрудник 1"
                 class="image image-all"
@@ -549,8 +549,10 @@
                 <use href="./images/icons.svg#icon-Vector"></use>
               </svg>
             </span>
-            Соглашаюсь с рассылкой и принимаю&nbsp;<a class="agreement__link" href=""
-              >Условия договора</a
+            <span
+              >Соглашаюсь с рассылкой и принимаю&nbsp;<a class="agreement__link" href=""
+                >Условия договора</a
+              ></span
             >
           </label>
           <button class="modal__button button" type="submit">Отправить</button>

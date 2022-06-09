@@ -596,9 +596,9 @@ header {
 }
 
 .agreement {
+  display: flex;
   margin-bottom: 30px;
-  display: inline-block;
-  align-items: center;
+  justify-content: center;
   color: var(--secondary-text);
 }
 
@@ -607,7 +607,7 @@ header {
   width: 16px;
   height: 15px;
   position: relative;
-  margin-right: 8.38px;
+  margin-right: 8px;
   /* border: 2px solid var(--primary-text); */
 }
 
@@ -703,9 +703,15 @@ header {
   margin-right: auto;
 }
 
+@media (min-width: 1200px) {
+  .hero {
+    padding: 200px 0px;
+  }
+}
+
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bigimage@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bigimage@2x.jpg);
   }
 }
 
@@ -713,6 +719,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   /* display: block; */
+  max-width: 360px;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 24px;
@@ -725,6 +732,7 @@ header {
 
 @media (min-width: 1200px) {
   .hero__title {
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -819,7 +827,7 @@ header {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .reasons__list {
     margin: -15px;
   }
@@ -884,8 +892,10 @@ header {
   text-align: center;
 }
 
-.team__item:not(:last-child) {
-  margin-bottom: 30px;
+@media (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -976,7 +986,7 @@ header {
   padding-top: 0px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .section.processes {
     display: none;
   }
@@ -1081,6 +1091,7 @@ header {
   background-color: var(--background-secondary);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  max-width: 450px;
 }
 
 .subscribe__email::placeholder {
@@ -1208,7 +1219,7 @@ header {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .adapt-container--foot {
     padding-left: 76px;
     margin-bottom: 60px;
@@ -1330,7 +1341,7 @@ header {
 }
 
 .grid__image {
-  height: 294px;
+  height: auto;
 }
 
 .grid__link {

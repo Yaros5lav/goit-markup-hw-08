@@ -174,9 +174,9 @@
 }
 .agreement {
 	// padding-left: 13px;
+	display: flex;
 	margin-bottom: 30px;
-	display: inline-block;
-	align-items: center;
+	justify-content: center;
 	color: var(--secondary-text);
 }
 .agreement__svg {
@@ -184,7 +184,7 @@
 	width: 16px;
 	height: 15px;
 	position: relative;
-	margin-right: 8.38px;
+	margin-right: 8px;
 	/* border: 2px solid var(--primary-text); */
 }
 .agreement__svg--checked {
