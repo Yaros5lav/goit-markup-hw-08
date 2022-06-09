@@ -182,17 +182,21 @@ p {
   padding: 0;
   border: none;
   background-color: transparent;
+  z-index: 10;
 }
 
 .header__svg {
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: relative;
+  top: 10px;
+  right: 15px;
 }
 
 .header__icon-cross {
   display: none;
-  z-index: 2;
+}
+
+.header__menu-button:hover, .header__menu-button:focus {
+  fill: var(--company-color);
 }
 
 .header__menu-button.is-open .header__icon-cross {
@@ -203,8 +207,21 @@ p {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .header__menu-button {
+    display: none;
+  }
+}
+
 .header__container {
   display: flex;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .header__container {
+    justify-content: space-between;
+  }
 }
 
 .address__icon {

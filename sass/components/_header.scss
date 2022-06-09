@@ -17,28 +17,39 @@
 	padding: 0;
 	border: none;
 	background-color: transparent;
+	z-index: 10;
 }
 .header__svg {
-	position: absolute;
-	top: 0;
-	right: 0;
+	position: relative;
+	top: 10px;
+	right: 15px;
 }
 .header__icon-cross {
 	display: none;
-	z-index: 2;
 }
 
 .header__menu-button {
+	&:hover,
+	&:focus {
+		fill: var(--company-color);
+	}
 	&.is-open .header__icon-cross {
 		display: block;
 	}
 	&.is-open .header__icon-menu {
 		display: none;
 	}
+	@media (min-width:768px) {
+		display: none;
+	}
 }
 .header__container {
 	display: flex;
-	// justify-content: space-between;
+	position: relative;
+	@media (max-width:767px) {
+		justify-content: space-between;
+	}
+	
 }
 
 .address__icon {
