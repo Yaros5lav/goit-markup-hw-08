@@ -478,6 +478,7 @@ header {
 }
 
 .modal {
+  z-index: 2;
   position: relative;
   padding: 40px 39px 40px 41px;
   background-color: var(--background-main);
@@ -693,7 +694,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 100%;
+  max-width: 1600px;
   background-color: var(--background-secondary);
   text-align: center;
   padding: 118px 0px;

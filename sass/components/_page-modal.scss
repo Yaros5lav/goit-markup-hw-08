@@ -52,6 +52,7 @@
 // 	outline: 0;
 // }
 .modal {
+	z-index: 2;
 	position: relative;
 	&__textarea:focus,
 	&__input:focus {
