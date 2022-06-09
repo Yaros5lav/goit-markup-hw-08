@@ -86,12 +86,15 @@ p {
 		color: var(--company-color);
 	}
 }
+.image-all {
+	max-width: 100%;
+}
 .container {
 	margin-right: auto;
 	margin-left: auto;
 	padding-right: 15px;
 	padding-left: 15px;
-	outline: 1px solid yellow;
+	outline: 1px solid tomato;
 	width: 100%;
 	@media (min-width: 480px) {
 		width: 480px;

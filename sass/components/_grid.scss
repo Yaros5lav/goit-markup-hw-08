@@ -44,6 +44,9 @@
 	border-bottom: 1px solid var(--projects-border);
 	padding: 20px 24px;
 }
+.grid__image {
+	height: 294px;
+}
 
 // .grid__link:hover .grid__overlay,
 // .grid__link:hover,
@@ -90,7 +93,7 @@
 }
 @media (min-width:768px) and (max-width:1199px) {
 	.grid__item {
-		width: calc((100% - 60px) / 2);
+		flex-basis: calc((100% - 60px) / 2);
 		margin: 15px;
 	}
 	.grid {
@@ -110,6 +113,6 @@
 			margin-bottom: 30px;
 		}
 	
-		flex-basis: calc((100% - 60px) / 4);
+		flex-basis: calc((100% - 60px) / 3);
 	}
 }

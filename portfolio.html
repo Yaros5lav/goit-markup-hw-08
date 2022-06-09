@@ -29,12 +29,12 @@
           <a href="./index.html" class="link logo navigation__flex"
             ><span lang="en"><span class="logo--web">Web</span>Studio</span></a
           >
-          <!-- <button type="button" class="button header__menu-button" data-menu-button>
+          <button type="button" class="button header__menu-button" data-menu-button>
             <svg class="header__svg header__svg--menu" width="40px" height="40px">
               <use class="header__icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
               <use class="header__icon-cross" href="./images/icons.svg#icon-close_40px"></use>
             </svg>
-          </button> -->
+          </button>
           <div class="header__contacts" data-menu>
             <ul class="list navigation__list navigation__flex">
               <li class="navigation__item">
@@ -48,7 +48,11 @@
                 >
               </li>
               <li class="navigation__item">
-                <a href="" class="link linkhov transition navigation__link">Контакты</a>
+                <a
+                  href=""
+                  class="link linkhov transition navigation__link navigation__link--no-margin"
+                  >Контакты</a
+                >
               </li>
             </ul>
             <!-- </nav> -->
@@ -70,12 +74,18 @@
                 >
               </li>
             </ul>
-            <button type="button" class="button header__menu-button" data-menu-button>
+            <ul class="printed-links list">
+              <li class="printed-links__item"><a class="link" href="">Instagram</a></li>
+              <li class="printed-links__item"><a class="link" href="">Twitter</a></li>
+              <li class="printed-links__item"><a class="link" href="">Facebook</a></li>
+              <li class="printed-links__item"><a class="link" href="">LinkedIn</a></li>
+            </ul>
+            <!-- <button type="button" class="button header__menu-button" data-menu-button>
               <svg class="header__svg header__svg--menu" width="40px" height="40px">
-                <!-- <use class="header__icon-menu" href="./images/icons.svg#icon-menu_40px"></use> -->
+                <use class="header__icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
                 <use class="header__icon-cross" href="./images/icons.svg#icon-close_40px"></use>
               </svg>
-            </button>
+            </button> -->
           </div>
         </div>
       </div>
@@ -107,7 +117,19 @@
             <li class="grid__item">
               <a href="" class="grid__link link transition"
                 ><div class="grid__thumb">
-                  <img src="./images/photo-1.jpg" alt="ноутбук" width="370" class="image" />
+                  <img
+                    srcset="
+                      ./images/photo-1.jpg      270w,
+                      ./images/photo-1@354p.jpg 354w,
+                      ./images/photo-1@450p.jpg 450w,
+                      ./images/photo-1@900p.jpg 900w
+                    "
+                    sizes="(min-width:1200px) 270px ,(min-width: 768px) 354px ,  100vw"
+                    src="./images/photo-1.jpg"
+                    alt="ноутбук"
+                    width="450"
+                    class="image image-all grid__image"
+                  />
                   <p class="grid__overlay transition">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
@@ -123,7 +145,19 @@
             <li class="grid__item">
               <a href="" class="grid__link link transition">
                 <div class="grid__thumb">
-                  <img src="./images/photo-2.jpg" alt="Постер" width="370" class="image" />
+                  <img
+                    srcset="
+                      ./images/photo-2.jpg      270w,
+                      ./images/photo-2@354p.jpg 354w,
+                      ./images/photo-2@450p.jpg 450w,
+                      ./images/photo-2@900p.jpg 900w
+                    "
+                    sizes="(min-width:1200px) 270px ,(min-width: 768px) 354px ,  100vw"
+                    src="./images/photo-2.jpg"
+                    alt="Постер"
+                    width="450"
+                    class="image image-all grid__image"
+                  />
                   <p class="grid__overlay transition">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
@@ -139,7 +173,19 @@
             <li class="grid__item">
               <a href="" class="grid__link link transition">
                 <div class="grid__thumb">
-                  <img src="./images/photo-3.jpg" alt="Рыба" width="370" class="image" />
+                  <img
+                    srcset="
+                      ./images/photo-3.jpg      270w,
+                      ./images/photo-3@354p.jpg 354w,
+                      ./images/photo-3@450p.jpg 450w,
+                      ./images/photo-3@900p.jpg 900w
+                    "
+                    sizes="(min-width:1200px) 270px ,(min-width: 768px) 354px ,  100vw"
+                    src="./images/photo-3.jpg"
+                    alt="Рыба"
+                    width="450"
+                    class="image image-all grid__image"
+                  />
                   <p class="grid__overlay transition">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
@@ -155,7 +201,19 @@
             <li class="grid__item">
               <a href="" class="grid__link link transition">
                 <div class="grid__thumb">
-                  <img src="./images/photo-4.jpg" alt="наушники" width="370" class="image" />
+                  <img
+                    srcset="
+                      ./images/photo-4.jpg      270w,
+                      ./images/photo-4@354p.jpg 354w,
+                      ./images/photo-4@450p.jpg 450w,
+                      ./images/photo-4@900p.jpg 900w
+                    "
+                    sizes="(min-width:1200px) 270px ,(min-width: 768px) 354px ,  100vw"
+                    src="./images/photo-4.jpg"
+                    alt="наушники"
+                    width="450"
+                    class="image image-all grid__image"
+                  />
                   <p class="grid__overlay transition">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
@@ -171,7 +229,19 @@
             <li class="grid__item">
               <a href="" class="grid__link link transition">
                 <div class="grid__thumb">
-                  <img src="./images/photo-5.jpg" alt="две коробки" width="370" class="image" />
+                  <img
+                    srcset="
+                      ./images/photo-5.jpg      270w,
+                      ./images/photo-5@354p.jpg 354w,
+                      ./images/photo-5@450p.jpg 450w,
+                      ./images/photo-5@900p.jpg 900w
+                    "
+                    sizes="(min-width:1200px) 270px ,(min-width: 768px) 354px ,  100vw"
+                    src="./images/photo-5.jpg"
+                    alt="две коробки"
+                    width="450"
+                    class="image image-all grid__image"
+                  />
                   <p class="grid__overlay transition">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
@@ -187,7 +257,19 @@
             <li class="grid__item">
               <a href="" class="grid__link link transition">
                 <div class="grid__thumb">
-                  <img src="./images/photo-6.jpg" alt="монитор" width="370" class="image" />
+                  <img
+                    srcset="
+                      ./images/photo-6.jpg      270w,
+                      ./images/photo-6@354p.jpg 354w,
+                      ./images/photo-6@450p.jpg 450w,
+                      ./images/photo-6@900p.jpg 900w
+                    "
+                    sizes="(min-width:1200px) 270px ,(min-width: 768px) 354px ,  100vw"
+                    src="./images/photo-6.jpg"
+                    alt="монитор"
+                    width="450"
+                    class="image image-all grid__image"
+                  />
                   <p class="grid__overlay transition">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
@@ -203,7 +285,19 @@
             <li class="grid__item">
               <a href="" class="grid__link link transition">
                 <div class="grid__thumb">
-                  <img src="./images/photo-7.jpg" alt="каталог" width="370" class="image" />
+                  <img
+                    srcset="
+                      ./images/photo-7.jpg      270w,
+                      ./images/photo-7@354p.jpg 354w,
+                      ./images/photo-7@450p.jpg 450w,
+                      ./images/photo-7@900p.jpg 900w
+                    "
+                    sizes="(min-width:1200px) 270px ,(min-width: 768px) 354px ,  100vw"
+                    src="./images/photo-7.jpg"
+                    alt="каталог"
+                    width="450"
+                    class="image image-all grid__image"
+                  />
                   <p class="grid__overlay transition">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
@@ -219,7 +313,19 @@
             <li class="grid__item">
               <a href="" class="grid__link link transition">
                 <div class="grid__thumb">
-                  <img src="./images/photo-8.jpg" alt="этикетка" width="370" class="image" />
+                  <img
+                    srcset="
+                      ./images/photo-8.jpg      270w,
+                      ./images/photo-8@354p.jpg 354w,
+                      ./images/photo-8@450p.jpg 450w,
+                      ./images/photo-8@900p.jpg 900w
+                    "
+                    sizes="(min-width:1200px) 270px ,(min-width: 768px) 354px ,  100vw"
+                    src="./images/photo-8.jpg"
+                    alt="этикетка"
+                    width="450"
+                    class="image image-all grid__image"
+                  />
                   <p class="grid__overlay transition">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
@@ -235,7 +341,19 @@
             <li class="grid__item">
               <a href="" class="grid__link link transition">
                 <div class="grid__thumb">
-                  <img src="./images/photo-9.jpg" alt="ноутбук и руки" width="370" class="image" />
+                  <img
+                    srcset="
+                      ./images/photo-9.jpg      270w,
+                      ./images/photo-9@354p.jpg 354w,
+                      ./images/photo-9@450p.jpg 450w,
+                      ./images/photo-9@900p.jpg 900w
+                    "
+                    sizes="(min-width:1200px) 270px ,(min-width: 768px) 354px ,  100vw"
+                    src="./images/photo-9.jpg"
+                    alt="ноутбук и руки"
+                    width="450"
+                    class="image image-all grid__image"
+                  />
                   <p class="grid__overlay transition">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
